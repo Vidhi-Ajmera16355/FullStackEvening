@@ -1,364 +1,395 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  body {
-    font-family: "Lato", sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-  }
-
-  header {
-    background-color: transparent;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  header.scrolled {
-    background-color: white;
-    color: #494343;
-    box-shadow: 0 4px 2px -2px gray;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: left;
-  }
-  
-  .nav-links li {
-    margin: 0 15px;
-  }
-  
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    
-    display: flex;
-
-  }
-  
-  .nav-links a i {
-    margin-right: 5px;
-  }
-  
-  .nav-links a:hover {
-    color: #ddd;
-  }
-  
-  header.scrolled .nav-links a {
-    color: #333;
-    font-weight: bold;
-  }
-  
-  header.scrolled .nav-links a:hover {
-    color: #666;
-  }
-
-  .hero {
-    background: url('https://png.pngtree.com/background/20230612/original/pngtree-woman-taking-a-photo-with-her-camera-picture-image_3174356.jpg') no-repeat center center/cover;
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .logo h1 {
-    color: #fff;
-    background-color: rgb(55, 53, 53);
-    padding: 10px 20px;
-    font-size: 40px;
-    letter-spacing: 5px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
 }
 
-  .about {
-    padding: 40px;
-    text-align: center;
-  }
-  
-  .about h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
-  }
-  
-  .about .subheading {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 20px;
-  }
-  
-  .about p {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .personal-details {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 40px;
-  }
-  
-  .personal-details .profile {
-    text-align: center;
-  }
-  
-  .personal-details .profile img {
-    width: 150px; 
-    margin-bottom: 10px;
-  }
-  
-  .personal-details .profile p {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .personal-details .bio {
-    width: 60%;
-    text-align: left;
-  }
-  
-  .skills {
-    background-color: #f9f9f9;
-    padding: 40px;
-    text-align: center;
-  }
-  
-  .skill-bar {
-    margin: 20px 0;
-  }
-  
-  .skill-bar p {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .progress {
-    background-color: #ddd;
-    border-radius: 5px;
-    width: 100%;
-    height: 20px;
-  }
-  
-  .progress-bar {
-    background-color: #333;
-    height: 20px;
-    color: white;
-    text-align: right;
-    padding-right: 10px;
-    border-radius: 5px;
-  }
-  
-  .stats {
-    display: flex;
-    justify-content: space-around;
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-  }
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
 
-  .stat {
-    text-align: center;
-  }
-  
-  .stat p:first-child {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .stat p:last-child {
-    font-size: 16px;
-  }
-.port{
-    width: 100%;
-    height: 50vh;
-    background-image: url('https://images.unsplash.com/photo-1551289470-6e22724e576f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHdvcnJ5JTIwZnJlZXxlbnwwfHwwfHx8MA%3D%3D')
+header {
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-.text{
-    text-align: center;
-    padding-top: 200px;
-    color: #ddd;
-    font-weight: 100;
-    text-transform: capitalize;
-    text-decoration: solid;
-    font-size: 50px;
+
+header.scrolled {
+  background-color: white;
+  color: #494343;
+  box-shadow: 0 4px 2px -2px gray;
 }
-.work{
-    padding-top: 40px;
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 30px;
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: left;
 }
-.work-text{
-    text-align: center;
-    font-size: 15px;
+
+.nav-links li {
+  margin: 0 15px;
 }
-.btn{
-    padding: 12px 24px !important; 
-    justify-content: center;
-    margin-left: 320px;
-    margin-top: 20px;
-    display: inline-block;
-    padding: 8px 16px;
-    vertical-align: middle;
-    overflow: hidden;
-    text-decoration: none;
-    color: inherit;
-    background-color: inherit;
-    text-align: center;
-    cursor: pointer;
-    white-space: nowrap;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
 }
-.contact{
-    margin-top: 40px;
-    background-image: url('https://png.pngtree.com/background/20230613/original/pngtree-picture-of-a-girl-with-a-camera-in-hand-picture-image_3379484.jpg');
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.nav-links a i {
+  margin-right: 5px;
+}
+
+.nav-links a:hover {
+  color: #ddd;
+}
+
+header.scrolled .nav-links a {
+  color: #333;
+  font-weight: bold;
+}
+
+header.scrolled .nav-links a:hover {
+  color: #666;
+}
+
+.hero {
+  background: url('https://png.pngtree.com/background/20230612/original/pngtree-woman-taking-a-photo-with-her-camera-picture-image_3174356.jpg') no-repeat center center/cover;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo h1 {
+  color: #fff;
+  background-color: rgb(55, 53, 53);
+  padding: 10px 20px;
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+.about {
+  padding: 40px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.about .subheading {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.personal-details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.personal-details .profile {
+  text-align: center;
+}
+
+.personal-details .profile img {
+  width: 150px; 
+  margin-bottom: 10px;
+}
+
+.personal-details .profile p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.personal-details .bio {
+  width: 60%;
+  text-align: left;
+}
+
+.skills {
+  background-color: #f9f9f9;
+  padding: 40px;
+  text-align: center;
+}
+
+.skill-bar {
+  margin: 20px 0;
+}
+
+.skill-bar p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.progress {
+  background-color: #ddd;
+  border-radius: 5px;
+  width: 100%;
+  height: 20px;
+}
+
+.progress-bar {
+  background-color: #333;
+  height: 20px;
+  color: white;
+  text-align: right;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat p:first-child {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.stat p:last-child {
+  font-size: 16px;
+}
+
+.port {
+  width: 100%;
+  height: 50vh;
+  background-image: url('https://images.unsplash.com/photo-1551289470-6e22724e576f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHdvcnJ5JTIwZnJlZXxlbnwwfHwwfHx8MA%3D%3D');
+}
+
+.text {
+  text-align: center;
+  padding-top: 200px;
+  color: #ddd;
+  font-weight: 100;
+  text-transform: capitalize;
+  text-decoration: solid;
+  font-size: 50px;
+}
+
+.work {
+  padding-top: 40px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+
+.work-text {
+  text-align: center;
+  font-size: 15px;
+}
+
+/* Updated Portfolio Grid */
+.portfolio {
+  text-align: center;
+  margin: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px; /* Space between the items */
+  justify-items: center;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures the images maintain their aspect ratio */
+  max-width: 200px; /* Adjust this based on your image size */
+  border-radius: 5px; /* Optional: for rounded corners */
+  transition: filter 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect: increases brightness when hovering */
+.grid-item img:hover {
+  filter: brightness(1.3); /* Increases brightness to make the image lighter */
+}
+
+.btn {
+  padding: 12px 24px !important; 
+  justify-content: center;
+  margin-left: 320px;
+  margin-top: 20px;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact {
+  margin-top: 40px;
+  background-image: url('https://png.pngtree.com/background/20230613/original/pngtree-picture-of-a-girl-with-a-camera-in-hand-picture-image_3379484.jpg');
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact p {
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 40px;
-    letter-spacing: 5px;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 40px;
+  letter-spacing: 5px;
 }
 
 .contact-section {
-    max-width: 900px;
-    margin: 200px ;
-    text-align: center;
-    padding: 30px;
+  max-width: 900px;
+  margin: 200px ;
+  text-align: center;
+  padding: 30px;
 }
 
 .contact-section h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .contact-section p {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .contact-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .contact-content .location img {
-    width: 300px;
-    height: auto;
-    border-radius: 8px;
-    margin-right: 20px;
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
 }
 
 .contact-info {
-    text-align: left;
+  text-align: left;
 }
 
 .contact-info p {
-    margin: 5px 0;
-    font-size: 16px;
+  margin: 5px 0;
+  font-size: 16px;
 }
 
 .contact-info i {
-    margin-right: 10px;
-    color: #333;
+  margin-right: 10px;
+  color: #333;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 form input,
 form textarea {
-    width: 100%;
-    max-width: 600px;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 form button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #333;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 form button:hover {
-    background-color: #555;
+  background-color: #555;
 }
 
 footer {
-    background-color: #555;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    transition: background-color 0.3s ease; 
+  background-color: #555;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  transition: background-color 0.3s ease; 
 }
 
 footer:hover {
-    background-color: #000;
+  background-color: #000;
 }
 
 .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .to-top {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .to-top a {
-    color: white;
-    background-color: #666;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
+  color: white;
+  background-color: #666;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 .to-top a:hover {
-    background-color: #333;
+  background-color: #333;
 }
 
 .social-icons {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .social-icons a {
-    color: white;
-    margin: 0 10px;
-    font-size: 20px;
-    text-decoration: none;
+  color: white;
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 .social-icons a:hover {
-    color: #ddd;
+  color: #ddd;
 }
 
 .powered p {
-    margin: 0;
-    font-size: 14px;
-    color: #ccc;
+  margin: 0;
+  font-size: 14px;
+  color: #ccc;
 }
