@@ -12,32 +12,39 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <!-- Navigation Bar -->
     <header id="header">
       <nav>
         <ul class="nav-links">
           <li>
-            <a href="#"><i class="fas fa-home"></i> HOME</a>
+            <a href="#about-section"><i class="fas fa-user"></i> HOME</a>
           </li>
           <li>
-            <a href="#"><i class="fas fa-user"></i> ABOUT</a>
+            <a href="#about-section"><i class="fas fa-user"></i> ABOUT</a>
           </li>
           <li>
-            <a href="#"><i class="fas fa-briefcase"></i> PORTFOLIO</a>
+            <a href="#portfolio-section"
+              ><i class="fas fa-briefcase"></i> PORTFOLIO</a
+            >
           </li>
           <li>
-            <a href="#"><i class="fas fa-envelope"></i> CONTACT</a>
+            <a href="#contact-section"
+              ><i class="fas fa-envelope"></i> CONTACT</a
+            >
           </li>
         </ul>
       </nav>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero">
       <div class="logo">
         <h1>MY WEBSITE LOGO</h1>
       </div>
     </section>
 
-    <section class="about">
+    <!-- About Section -->
+    <section id="about-section" class="about">
       <h2>ABOUT ME</h2>
       <p class="subheading">I love photography</p>
       <p>
@@ -64,67 +71,28 @@
       </div>
     </section>
 
-    <section class="skills">
-      <h2>I'm really good at:</h2>
-      <div class="skill-bar">
-        <p><i class="fas fa-camera"></i> Photography</p>
-        <div class="progress">
-          <div class="progress-bar" style="width: 90%">90%</div>
-        </div>
-      </div>
-      <div class="skill-bar">
-        <p><i class="fas fa-desktop"></i> Web Design</p>
-        <div class="progress">
-          <div class="progress-bar" style="width: 85%">85%</div>
-        </div>
-      </div>
-      <div class="skill-bar">
-        <p><i class="fas fa-image"></i> Photoshop</p>
-        <div class="progress">
-          <div class="progress-bar" style="width: 75%">75%</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="stats">
-      <div class="stat">
-        <p>14+</p>
-        <p>Partners</p>
-      </div>
-      <div class="stat">
-        <p>55+</p>
-        <p>Projects Done</p>
-      </div>
-      <div class="stat">
-        <p>89+</p>
-        <p>Happy Clients</p>
-      </div>
-      <div class="stat">
-        <p>150+</p>
-        <p>Meetings</p>
-      </div>
-    </section>
-
-    <section>
+    <!-- Portfolio Section -->
+    <section id="portfolio-section">
       <div class="port">
         <div class="text">
           <p class="portfolio">PORTFOLIO</p>
         </div>
       </div>
-    </section>
-    <section>
-      <div class="work-class">
-        <p class="work">MY WORK</p>
-        <p class="work-text">
-          Here are some of my latest lorem work ipsum tipsum.
-          <br />
-          Click on the images to make then bigger
-        </p>
-      </div>
-      <button class="btn">LOAD MORE</button>
+      <section>
+        <div class="work-class">
+          <p class="work">MY WORK</p>
+          <p class="work-text">
+            Here are some of my latest lorem work ipsum tipsum.
+            <br />
+            Click on the images to make them bigger
+          </p>
+        </div>
+        <button class="btn">LOAD MORE</button>
+      </section>
     </section>
 
-    <section class="contact">
+    <!-- Contact Section -->
+    <section id="contact-section" class="contact">
       <div>
         <p>CONTACT</p>
       </div>
@@ -157,6 +125,7 @@
       </div>
     </section>
 
+    <!-- Footer Section -->
     <footer>
       <div class="footer-container">
         <div class="to-top">
@@ -175,6 +144,7 @@
       </div>
     </footer>
 
+    <!-- JavaScript for Navbar Scroll Effect and Smooth Scrolling -->
     <script>
       window.addEventListener("scroll", function () {
         const header = document.getElementById("header");
@@ -183,6 +153,16 @@
         } else {
           header.classList.remove("scrolled");
         }
+      });
+
+      // Smooth scroll effect for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
       });
     </script>
   </body>
