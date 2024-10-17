@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Personal Website</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a href="#"><i class="fas fa-home"></i> HOME</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-user"></i> ABOUT</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-briefcase"></i> PORTFOLIO</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-envelope"></i> CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="logo">
+        <h1>MY WEBSITE LOGO</h1>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>ABOUT ME</h2>
+      <p class="subheading">I love photography</p>
+      <p>
+        We have created a fictional "personal" website/blog, and our fictional
+        character is a hobby photographer. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua.
+      </p>
+      <div class="personal-details">
+        <div class="profile">
+          <img
+            src="https://cdn.pixabay.com/photo/2021/12/04/04/44/woman-6844349_640.jpg"
+            alt="Profile Picture"
+          />
+          <p>My Name</p>
+        </div>
+        <div class="bio">
+          <p>
+            Welcome to my website. I am lorem ipsum consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam...
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2>I'm really good at:</h2>
+      <div class="skill-bar">
+        <p><i class="fas fa-camera"></i> Photography</p>
+        <div class="progress">
+          <div class="progress-bar" style="width: 90%">90%</div>
+        </div>
+      </div>
+      <div class="skill-bar">
+        <p><i class="fas fa-desktop"></i> Web Design</p>
+        <div class="progress">
+          <div class="progress-bar" style="width: 85%">85%</div>
+        </div>
+      </div>
+      <div class="skill-bar">
+        <p><i class="fas fa-image"></i> Photoshop</p>
+        <div class="progress">
+          <div class="progress-bar" style="width: 75%">75%</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stat">
+        <p>14+</p>
+        <p>Partners</p>
+      </div>
+      <div class="stat">
+        <p>55+</p>
+        <p>Projects Done</p>
+      </div>
+      <div class="stat">
+        <p>89+</p>
+        <p>Happy Clients</p>
+      </div>
+      <div class="stat">
+        <p>150+</p>
+        <p>Meetings</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="port">
+        <div class="text">
+          <p class="portfolio">PORTFOLIO</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="work-class">
+        <p class="work">MY WORK</p>
+        <p class="work-text">
+          Here are some of my latest lorem work ipsum tipsum.
+          <br />
+          Click on the images to make then bigger
+        </p>
+      </div>
+      <button class="btn">LOAD MORE</button>
+    </section>
+
+    <section class="contact">
+      <div>
+        <p>CONTACT</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="contact-section">
+        <h1>WHERE I WORK</h1>
+        <p>I'd love your feedback!</p>
+        <div class="contact-content">
+          <div class="location">
+            <img
+              src="https://cdn.britannica.com/37/245037-050-79129D52/world-map-continents-oceans.jpg"
+              alt="Location Map"
+            />
+          </div>
+          <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> Chicago, US</p>
+            <p><i class="fas fa-phone"></i> Phone: +00 151515</p>
+            <p><i class="fas fa-envelope"></i> Email: mail@mail.com</p>
+          </div>
+        </div>
+        <p>Swing by for a cup of <span>☕</span>, or leave me a note:</p>
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Name" />
+          <input type="email" name="email" placeholder="Email" />
+          <textarea name="message" placeholder="Message"></textarea>
+          <button type="submit">SEND MESSAGE</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="to-top">
+          <a href="./index.html">To the top</a>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="powered">
+          <p>Powered by V&S Creation!!😎</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        const header = document.getElementById("header");
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>
