@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url('https://www.un.org/sites/un2.un.org/files/styles/large-article-image-style-16-9/public/field/image/2023/03/52196025795_06f077377a_c.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    animation: backgroundFade 5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes backgroundFade {
+    0% { filter: brightness(0.8); }
+    100% { filter: brightness(1); }
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: #fbfffe;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    animation: slideDown 1.5s ease-out, fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes slideDown {
+    0% { transform: translateY(-20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  
+  .card {
+    width: 90%;
+    max-width: 500px;
+    background: linear-gradient(145deg, rgba(62, 62, 62, 0.85), rgba(40, 40, 40, 0.85));
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  .search {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    animation: fadeIn 2.5s ease-in-out;
+  }
+  
+  .search input {
+    flex: 1;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: rgba(45, 45, 45, 0.8);
+    color: #fff;
+    padding: 0 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .search input:focus {
+    background: rgba(58, 58, 58, 0.8);
+    border: 1px solid #00ffb2;
+  }
+  
+  .search button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: #00ffb2;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .search button:hover {
+    background: #00e5a0;
+    transform: scale(1.1);
+  }
+  
+  .search button img {
+    width: 20px;
+  }
+  
+  .weather {
+    display: none;
+    animation: slideUp 1s ease-out;
+  }
+  
+  @keyframes slideUp {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  .weather-icon {
+    width: 120px;
+    margin: 20px 0;
+    animation: pulse 2s infinite alternate;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); opacity: 0.9; }
+    100% { transform: scale(1.1); opacity: 1; }
+  }
+  
+  .temp {
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: #00ffb2;
+    animation: fadeIn 2.5s ease-in-out;
+  }
+  
+  .city {
+    font-size: 1.8rem;
+    color: #a8a8a8;
+  }
+  
+  .details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 20px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: #a8a8a8;
+  }
+  
+  .col img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .humidity, .wind {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .error {
+    color: #ff5c5c;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 1.8rem;
+    }
+  
+    .temp {
+      font-size: 2.8rem;
+    }
+  
+    .city {
+      font-size: 1.5rem;
+    }
+  
+    .details {
+      flex-direction: column;
+    }
+  }
+  

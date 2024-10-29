@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="todo-container">
+      <h1>Task Calendar</h1>
+      <input type="text" id="input-box" placeholder="Add Task" />
+      <input type="date" id="task-date" />
+      <button id="input-button" onclick="addTask()">Add Task</button>
+
+      <h2>October 2024</h2>
+      <div id="calendar">
+        <!-- Dynamically generated calendar days will go here -->
+      </div>
+
+      <hr />
+      <div class="counter-container">
+        Completed: <span id="completed-counter">0</span> | Uncompleted:
+        <span id="uncompleted-counter">0</span>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
